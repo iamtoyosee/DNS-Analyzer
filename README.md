@@ -32,7 +32,7 @@ cd dnscan
 pip install -r requirements.txt
 ```
 
-##Usage
+## Usage
 Update the script with your OpenAI API key. Replace your-api-key-here with your actual API key in the script:
 
 ```python
@@ -56,3 +56,25 @@ The DNS scan results for example.com indicate that there are multiple A records 
 93.184.216.35
 93.184.216.36
 These IP addresses are likely load balanced to distribute traffic evenly across multiple servers, improving the site's reliability and performance.
+```
+
+
+## Configuration
+
+You can modify the script to customize the DNS records being queried, the number of threads used for scanning, and other parameters. 
+
+### Arguments
+
+- `domain`: The domain to be scanned
+- `recordtype`: The type of DNS record to query (e.g., A, MX, TXT)
+- `args.tld`: If specified, the script will print top-level domain nameservers
+- `args.no_ip`: If specified, the script will not print IP addresses
+- `args.domain_first`: If specified, the script will print domain names before IP addresses
+- `args.threads`: The number of threads to use for scanning
+- `args.quick`: If specified, the script will perform a quick scan
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+
