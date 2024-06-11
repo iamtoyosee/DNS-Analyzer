@@ -25,3 +25,18 @@ This script performs a DNS scan for a given domain, outputs the results, and sen
 ```bash
 git clone https://github.com/yourusername/dnscan.git
 cd dnscan
+
+$ python dnscan.py example.com
+
+Scanning example.com for A records
+example.com - 93.184.216.34
+example.com - 93.184.216.35
+example.com - 93.184.216.36
+
+ChatGPT Analysis:
+The DNS scan results for example.com indicate that there are multiple A records associated with the domain. The IP addresses found are:
+
+93.184.216.34
+93.184.216.35
+93.184.216.36
+These IP addresses are likely load balanced to distribute traffic evenly across multiple servers, improving the site's reliability and performance.
