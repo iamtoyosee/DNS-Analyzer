@@ -25,7 +25,23 @@ This script performs a DNS scan for a given domain, outputs the results, and sen
 ```bash
 git clone https://github.com/yourusername/dnscan.git
 cd dnscan
+```
+2. Install the required Python libraries:
 
+```bash
+pip install -r requirements.txt
+```
+
+##Usage
+Update the script with your OpenAI API key. Replace your-api-key-here with your actual API key in the script:
+
+```python
+openai.api_key = 'your-api-key-here'
+```
+
+3. Run the script:
+   
+```bash
 $ python dnscan.py example.com
 
 Scanning example.com for A records
